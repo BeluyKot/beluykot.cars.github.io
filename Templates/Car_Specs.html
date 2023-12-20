@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8"/>
+  <title>car performance</title>
+  <link rel="stylesheet" href="../Css/Car_Specs.css">
+  <link rel="stylesheet" href="/Css/photoswipe.css">
+  <link rel="stylesheet" href="../Css/default-skin.css">
+</head>
+
+<body>
+<header v-cloak>
+  <header-component></header-component>
+</header>
+<main v-cloak>
+  <div>{{params}}</div>
+  <div class="Alfa_Romeo">
+    <div class="Alfa_Romeo_photos">
+      <gallery :items="[
+    {src: '/img/1.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900},
+    {src: '/img/2.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900},
+    {src: '/img/3.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900},
+    {src: '/img/3.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900}
+  ]"></gallery>
+    </div>
+    <div class="Alfa_Romeo_head"></div>
+    <div class="Alfa_Romeo_block">
+      <div class="Alfa_Romeo_main">
+        <div>
+          <h3 class="head_of_blocks">Основные данные</h3>
+          <ul class="carcase">
+            <li v-for="spec in specs.main">
+              <div>{{spec.key}}</div>
+              <div>{{spec.value}}</div>
+            </li>
+          </ul>
+
+          <div v-for="(spec, spec_name) in specs">
+            <h4 class="red">{{spec_name}}</h4>
+            <ul class="carcase">
+              <li v-for="item in spec">
+                <div>{{item.key}}</div>
+                <div>{{item.value}}</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+</footer>
+<script src="../Js/vue.js"></script>
+<script src="../Js/components.js"></script>
+<script src="/Js/photoswipe.min.js"></script>
+<script src="/Js/photoswipe-ui-default.min.js"></script>
+<script src="/Js/VuePictureSwipe.js"></script>
+<script src="../Js/Car_Specs.js"></script>
+</body>
+</html>
