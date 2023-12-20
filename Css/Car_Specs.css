@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background: #211e1e;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #211e1e;
+}
+
+.header_containers {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo_cont {
+    height: 100%;
+    width: 15%;
+    text-align: right;
+}
+
+.logo {
+    padding-right: 17px;
+    height: 90%;
+}
+
+.style_of_text2 {
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.Alfa_Romeo{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.Alfa_Romeo_block{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Alfa_Romeo_main{
+    flex: 1;
+    width: 1050px;
+    border-radius: 14px;
+    background-color: #211e1e;
+    padding: 15px;
+}
+
+.head_of_blocks{
+    margin: 20px 0;
+}
+
+.carcase{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.red{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.carcase li{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.carcase > li:nth-child(odd){
+    background-color: #494949;
+    padding-left: 10px;
+}
+
+.carcase > li > div {
+    flex: 1 1 50%;
+    color: white;
+}
+
+[v-cloak] {
+    display: none;
+}
+/*gallery*/
+
+ .pswp__top-bar {
+     text-align: right;
+ }
+.pswp__caption__center {
+    text-align: center
+}
+.pswp__button--rotate {
+    background: url(/img/icons/rotate.png) 0 0 no-repeat;
+    background-size: 62px 24px;
+}
+.pswp__button--rotate--left {
+    background-position: 8px 10px;
+}
+.pswp__button--rotate--right {
+    background-position: -26px 10px;
+}
+.gallery-thumbnail {
+    display: inline;
+    margin: 5px;
+}
+/*gallery end*/

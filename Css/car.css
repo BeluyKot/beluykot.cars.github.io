@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background: #211e1e;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_containers {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo_cont {
+    height: 100%;
+    width: 15%;
+    text-align: right;
+}
+
+.logo {
+    padding-right: 17px;
+    height: 90%;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-top: 130px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.ram {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.items_navigation {
+    display: flex;
+    height: 52px;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+}
+
+.head_cars {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.search {
+    font-weight: bold;
+}
+
+.back {
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+[v-cloak] { display: none; }
+
+footer {
+    height: 105px;
+    width: 100%;
+    background: #211e1e;
+    margin-top: 25px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #211e1e;
+}
+
+.style_of_text {
+    text-decoration: none;
+    color: white;
+}
+
+.characteristics {
+    color: dimgrey;
+}
+
+.head_cars select {
+    width: 17%;
+}
+
+.find {
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    color: cornflowerblue;
+    width: 6%;
+}
+
+.some_cars_logo h2 {
+    width: 20%;
+    color: white;
+    border-bottom: 2px solid #e01011;
+    margin: auto;
+    text-align: center;
+}
+
+.characteristic {
+    background-color: rgba(104, 104, 104, 0.5);
+    text-align: center;
+}
+
+.some_cars {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 490px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.some_cars_logo {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.some_cars_models {
+    width: 100%;
+    column-count: 4;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.style_font {
+    color: white;
+    font-size: 17px;
+}
+
+.style_of_text2 {
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.custom_select {
+    width: 17%;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    border-radius: 1px;
+}
+
+.custom_select:hover {
+    cursor: pointer;
+}
+
+.custom_select i {
+    margin-right: 3px;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.custom_select span {
+    color: dimgrey;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.drop-down {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 106%;
+}
+
+.some_cars_models li {
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.custom_select_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.red_selected span {
+    color: red;
+}
+
+.some_cars_models li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.span {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+.custom_select_cont_input {
+    width: 96%;
+    margin: 5px 2% 5px;
+    box-sizing: border-box;
+}
+
+.drop-down-item-cont {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+.drop-down-item {
+    padding: 4px 0 4px 6px;
+}
+
+.drop-down-item:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.center {
+    text-align: center;
+    color: white;
+  }
+  
+  .news_articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .large_article {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px;
+    clear: both;
+  }
+  
+  .large_article h3 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .large_article p {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .article_image {
+    float: left;
+    margin-right: 20px;
+    max-width: 288px;
+    max-height: 172px;
+  }
+
+  .img{
+    width: 288px;
+    height: 172px;
+  }
+  @media (max-width: 768px) {
+    .header_containers {
+      width: 100%;
+      padding: 0 10px;
+      justify-content: center;
+    }
+  
+    .logo_cont {
+      width: 30%;
+    }
+  
+    .logo {
+      padding-right: 0;
+      height: 70%;
+    }
+  }
