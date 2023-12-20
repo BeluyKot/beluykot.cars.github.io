@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="vue-picture-swipe/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="vue-picture-swipe/photoswipe/default-skin/default-skin.css">
+    <script src="vue-picture-swipe/photoswipe/photoswipe.js"></script>
+    <script src="vue-picture-swipe/photoswipe/photoswipe-ui-default.js"></script>
+    <script src="vue-picture-swipe/VuePictureSwipe.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <gallery :items="[
+    {src: 'example/1.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900},
+    {src: 'example/2.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900},
+    {src: 'example/3.jpg',thumbnail: 'http://via.placeholder.com/64x64',w: 1200,h: 900}
+  ]"></gallery>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {},
+            mounted() {
+                console.log('hi')
+            }
+        })
+    </script>
+</body>
+
+</html>
